@@ -13,6 +13,7 @@ type Request struct {
 	data map[string]interface{}
 }
 
+//initialize mongo vars
 var err error
 var session *mgo.Session
 var conn = session.DB("getreq").C("requests")
